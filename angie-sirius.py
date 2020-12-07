@@ -35,8 +35,14 @@ def main():
     parser.add_argument("-o", "--output")
     args = vars(parser.parse_args())
     if args["mode"] == "hide":
+        if args["data"] == None or args["key"] == None or args["image"] == None or args["password"] == None or args["from"] == None or args["to"] == None:
+            parser.print_help()
+            return
         hide(args["data"], args["key"], args["image"], args["password"], args["from"], args["to"])
     elif args["mode"] == "reveal":
+        if args["key"] == None or args["image"] == None or args["password"] == None or args["from"] == None or args["output"] == None:
+            parser.print_help()
+            return
         reveal(args["key"], args["image"], args["password"], args["from"], args["output"])
     else:
         parser.print_help()
