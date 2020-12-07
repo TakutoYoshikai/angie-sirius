@@ -3,18 +3,25 @@ from sirius import sirius
 from cad import cad
 from parade import parade
 import argparse
+import os
 
 def hide(data_filepath, key_filepath, image_filepath, password, fr, to):
     sirius.encode(data_filepath, key_filepath, "output1.data")
     parade.generate_key(image_filepath, "output1.data", "output2.png")
     cad.img_to_binary("output2.png", "output3.data")
     lina.hide_into_album("output3.data", password, fr, to)
+    os.remove("output1.data")
+    os.remove("output2.png")
+    os.remove("output3.data")
 
 def reveal(key_filepath, image_filepath, password, fr, output_filepath):
     lina.reveal_from_album(password, fr, "output2-1.data")
     cad.binary_to_img("output2-1.data", "output2-2.png")
     parade.decode("output2-2.png", image_filepath, "output2-3.data")
     sirius.decode("output2-3.data", key_filepath, output_filepath)
+    os.remove("output2-1.data")
+    os.remove("output2-2.png")
+    os.remove("output2-3.data")
 
 def main():
     parser = argparse.ArgumentParser(description="angie-sirius is a powerful encoder/decoder of data")
