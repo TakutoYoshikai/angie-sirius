@@ -1,0 +1,4 @@
+git+https://github.com/TakutoYoshikai/lina.git
+git+https://github.com/TakutoYoshikai/parade.git
+git+https://github.com/TakutoYoshikai/sirius.git
+git+https://github.com/TakutoYoshikai/cad.git
