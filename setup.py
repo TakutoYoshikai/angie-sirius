@@ -12,7 +12,7 @@ setup(
     packages = find_packages(),
     entry_points={
         "console_scripts": [
-            "angie-sirius = angie-sirius.angie-sirius:main",
+            "angie-sirius = angie_sirius.angie_sirius:main",
         ]
     }
 )
