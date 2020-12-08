@@ -1,5 +1,5 @@
 # angie-sirius
-this is a set of steganography programs.
+This is a set of steganography programs.
 It includes below
 
 * [lina](https://github.com/TakutoYoshikai/lina)
