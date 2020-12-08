@@ -14,6 +14,7 @@ angie-sirius can be used as a data encoder/decoder.
 pip install git+https://github.com/TakutoYoshikai/angie-sirius.git
 ```
 **encode**
+
 encoding needs them.
 * a secret file to hide
 * a file as a key(any file type, larger than secret file)
@@ -25,6 +26,7 @@ angie-sirius hide -p <PASSWORD> -k <KEY FILE> -i <IMAGE FILE> -f <DIRECTORY CONT
 ```
 
 **decode**
+
 decoding needs them.
 * a file as a key(any file type, larger than secret file)
 * an image file
