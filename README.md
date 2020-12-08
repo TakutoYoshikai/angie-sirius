@@ -20,7 +20,7 @@ These are required
 * a secret file to hide
 * a file as a key(any file type, larger than secret file)
 * an image file
-* a directory containing image files
+* a directory containing png image files
 * a directory(destination)
 ```bash
 angie-sirius hide -p <PASSWORD> -k <KEY FILE> -i <IMAGE FILE> -f <DIRECTORY CONTAINING IMAGE FILES> -t <DESTINATION DIRECTORY> -d <SECRET FILE>
@@ -31,7 +31,7 @@ angie-sirius hide -p <PASSWORD> -k <KEY FILE> -i <IMAGE FILE> -f <DIRECTORY CONT
 These are required
 * a file as a key(any file type, larger than secret file)
 * an image file
-* a directory containing image files having secret file
+* a directory containing png image files having secret file
 ```bash
 angie-sirius reveal -p <PASSWORD> -k <KEY FILE> -i <IMAGE FILE> -f <DIRECTORY CONTAINING ENCODED IMAGE FILES> -o <OUTPUT FILE>
 ```
