@@ -31,7 +31,7 @@ angie-sirius hide -p <PASSWORD> -k <KEY FILE> -i <IMAGE FILE> -f <DIRECTORY CONT
 These are required
 * a file as a key(any file type, larger than secret file)
 * an image file
-* a directory containing encoded image files
+* a directory containing image files having secret file
 ```bash
 angie-sirius reveal -p <PASSWORD> -k <KEY FILE> -i <IMAGE FILE> -f <DIRECTORY CONTAINING ENCODED IMAGE FILES> -o <OUTPUT FILE>
 ```
