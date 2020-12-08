@@ -7,13 +7,13 @@ It includes below
 * [sirius](https://github.com/TakutoYoshikai/sirius)
 * [cad](https://github.com/TakutoYoshikai/cad)
 
-angie-sirius can be used as a data encoder/decoder.
+angie-sirius can be used as a powerful steganography program.
 ### Usage
 **install**
 ```bash
 pip install git+https://github.com/TakutoYoshikai/angie-sirius.git
 ```
-**encode**
+**hide**
 
 These are required
 
@@ -26,7 +26,7 @@ These are required
 angie-sirius hide -p <PASSWORD> -k <KEY FILE> -i <IMAGE FILE> -f <DIRECTORY CONTAINING IMAGE FILES> -t <DESTINATION DIRECTORY> -d <SECRET FILE>
 ```
 
-**decode**
+**reveal**
 
 These are required
 * a file as a key(any file type, larger than secret file)
