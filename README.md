@@ -1,6 +1,6 @@
 # angie-sirius
 this is a set of steganography program.
-It includes them
+It includes below
 
 * [lina](https://github.com/TakutoYoshikai/lina)
 * [parade](https://github.com/TakutoYoshikai/parade)
@@ -15,7 +15,8 @@ pip install git+https://github.com/TakutoYoshikai/angie-sirius.git
 ```
 **encode**
 
-encoding needs them.
+These are required
+
 * a secret file to hide
 * a file as a key(any file type, larger than secret file)
 * an image file
@@ -27,7 +28,7 @@ angie-sirius hide -p <PASSWORD> -k <KEY FILE> -i <IMAGE FILE> -f <DIRECTORY CONT
 
 **decode**
 
-decoding needs them.
+These are required
 * a file as a key(any file type, larger than secret file)
 * an image file
 * a directory containing encoded image files
